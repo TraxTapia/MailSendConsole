@@ -150,8 +150,6 @@ namespace sendMail
                 smtp.UseDefaultCredentials = false;
                 smtp.Credentials = new System.Net.NetworkCredential("testtapia1227@gmail.com", "admin@1234"); // ***use valid credentials***
                 smtp.Port = 587;
-
-                //Or your Smtp Email ID and Password
                 smtp.EnableSsl = true;
                 smtp.Send(mail);
 
