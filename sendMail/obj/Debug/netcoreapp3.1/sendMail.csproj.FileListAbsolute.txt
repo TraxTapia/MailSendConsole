@@ -1,0 +1,13 @@
+C:\Users\ivan.tapia\source\repos\sendMail\sendMail\bin\Debug\netcoreapp3.1\sendMail.exe
+C:\Users\ivan.tapia\source\repos\sendMail\sendMail\bin\Debug\netcoreapp3.1\sendMail.deps.json
+C:\Users\ivan.tapia\source\repos\sendMail\sendMail\bin\Debug\netcoreapp3.1\sendMail.runtimeconfig.json
+C:\Users\ivan.tapia\source\repos\sendMail\sendMail\bin\Debug\netcoreapp3.1\sendMail.runtimeconfig.dev.json
+C:\Users\ivan.tapia\source\repos\sendMail\sendMail\bin\Debug\netcoreapp3.1\sendMail.dll
+C:\Users\ivan.tapia\source\repos\sendMail\sendMail\bin\Debug\netcoreapp3.1\sendMail.pdb
+C:\Users\ivan.tapia\source\repos\sendMail\sendMail\obj\Debug\netcoreapp3.1\sendMail.csproj.AssemblyReference.cache
+C:\Users\ivan.tapia\source\repos\sendMail\sendMail\obj\Debug\netcoreapp3.1\sendMail.AssemblyInfoInputs.cache
+C:\Users\ivan.tapia\source\repos\sendMail\sendMail\obj\Debug\netcoreapp3.1\sendMail.AssemblyInfo.cs
+C:\Users\ivan.tapia\source\repos\sendMail\sendMail\obj\Debug\netcoreapp3.1\sendMail.csproj.CoreCompileInputs.cache
+C:\Users\ivan.tapia\source\repos\sendMail\sendMail\obj\Debug\netcoreapp3.1\sendMail.dll
+C:\Users\ivan.tapia\source\repos\sendMail\sendMail\obj\Debug\netcoreapp3.1\sendMail.pdb
+C:\Users\ivan.tapia\source\repos\sendMail\sendMail\obj\Debug\netcoreapp3.1\sendMail.genruntimeconfig.cache
