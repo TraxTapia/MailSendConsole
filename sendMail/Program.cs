@@ -10,12 +10,12 @@ namespace sendMail
         {
 
             //senMailMediaccess();
-            Console.WriteLine("Ingresa una direccion de correo electronico");
-            string para;
-            para = Console.ReadLine();
-            Console.WriteLine("Ingresa un cuerpo de mensaje");
-            string body;
-            body = Console.ReadLine();
+            //Console.WriteLine("Ingresa una direccion de correo electronico");
+            //string para;
+            //para = Console.ReadLine();
+            //Console.WriteLine("Ingresa un cuerpo de mensaje");
+            //string body;
+            //body = Console.ReadLine();
             //Console.WriteLine("El texto introducido es: " + texto);
             //Console.WriteLine("Ingresa una direccion de correo electronico")
             //string para;
@@ -23,8 +23,11 @@ namespace sendMail
 
 
             ////sendMail("traxtapia1227@gmail.com", "hola esta es una prueba");
-            sendMail(para, "testtapia1227@gmail.com", body);
+            //senMailMediaccessContacto();
+            mailContacto();
+            //sendMail(para, "testtapia1227@gmail.com", body);
             ////Console.WriteLine("Hello World!");
+            Console.ReadLine();
         }
         public static string htmlBody(string titulo, string nombre, string direccion, string correo, string num_tel, string area, string mensaje)
         {
@@ -70,7 +73,7 @@ namespace sendMail
                 smtp.Port = 587;
                 smtp.EnableSsl = true;
                 smtp.UseDefaultCredentials = false;
-                smtp.Credentials = new System.Net.NetworkCredential("notificaciones@mediaccess.com.mx", "M3d1.2020");
+                smtp.Credentials = new System.Net.NetworkCredential("notificaciones@mediaccess.com.mx", "Mak28596");
 
 
 
@@ -97,8 +100,8 @@ namespace sendMail
                 body_html = htmlBody("Aviso de Bolsa de Trabajo", "IVAN", "PRUEBA", "traxtapia1227@gmail.com", "030330303", "SISTEMAS", "PRUEBA");
 
                 MailMessage email = new MailMessage();
-                email.To.Add(new MailAddress("traxtapia1227@gmail.com"));
-                email.From = new MailAddress("notificaciones@mediaccess.com.mx");
+                email.To.Add(new MailAddress("ventas@mediaccess.com.mx"));
+                email.From = new MailAddress("nnotificaciones@mediaccess.com.mx");
                 email.Subject = "Contacto Mediaccess";
                 email.Body = body_html;
                 email.IsBodyHtml = true;
@@ -109,7 +112,7 @@ namespace sendMail
                 smtp.Port = 587;
                 smtp.EnableSsl = true;
                 smtp.UseDefaultCredentials = false;
-                smtp.Credentials = new System.Net.NetworkCredential("notificaciones@mediaccess.com.mx", "M3d1.2020");
+                smtp.Credentials = new System.Net.NetworkCredential("notificaciones@mediaccess.com.mx", "Mak28596");
 
 
 
@@ -162,7 +165,42 @@ namespace sendMail
                 Console.WriteLine("ocurrio un error " + ex.Message);
             }
         }
+        
+     public static void mailContacto()
+        {
+            try
+            {
+                string body_html = "";
+                body_html = htmlBody("Aviso de Bolsa de Trabajo", "IVAN", "PRUEBA", "traxtapia1227@gmail.com", "030330303", "SISTEMAS", "PRUEBA");
 
-    
+                MailMessage email = new MailMessage();
+                email.To.Add(new MailAddress("ventas@mediaccess.com.mx"));
+                email.From = new MailAddress("notificaciones@mediaccess.com.mx");
+                email.Subject = "Contacto Mediaccess";
+                email.Body = body_html;
+                email.IsBodyHtml = true;
+                email.Priority = MailPriority.High;
+                SmtpClient smtp = new SmtpClient();
+
+                smtp.Host = "SMTP.Office365.com";
+                smtp.Port = 587;
+                smtp.EnableSsl = true;
+                smtp.UseDefaultCredentials = false;
+                smtp.Credentials = new System.Net.NetworkCredential("notificaciones@mediaccess.com.mx", "Mak28596");
+
+
+
+                smtp.Send(email);
+
+
+                Console.WriteLine("*****---Mensaje enviado con exito---*****");
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("ocurrio un error " + ex.Message);
+
+            }
+        }
     }
 }
